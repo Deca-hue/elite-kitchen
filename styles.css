@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ff8c00; /* Dark Orange */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover{
+color: #422502;
+}
+
+#hero {
+    background: url('path/to/hero-image.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+    background-color: #ffa500; /* Orange */
+    position: relative;
+    overflow: hidden;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.5s;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 1s;
+}
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #ff7300; /* Dark Orange */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 1.5s, scaleInOut 1.5s infinite ease-in-out;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: #f1e2ce;
+    color: #333;
+}
+
+/* Define the fadeInUp animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Define the in-out scale animation */
+@keyframes scaleInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Scales the button up */
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s, boxshadow 0.3s;
+}
+.product:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(247, 140, 64, 0.2);
+}
+.product img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.product img:hover { transform: scale(1.1);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+     /* Zoom effect and box shadow on hover */ }
+
+.button{
+    padding: 5px 5px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: #ff8c00;
+    border-radius: 5px;
+}
+.button:hover{
+    transform: scale(1.3,1.3);
+    background-color: rgb(245, 102, 0);
+    cursor: pointer;
+}
+.loading-alert { position: fixed;
+     top: 20px;
+      right: 20px;
+       background-color: #ffa500; /* Orange */ 
+       color: #fff;
+        padding: 15px; 
+        border-radius: 5px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        z-index: 1000; 
+        animation: fadeOut 3s forwards 2s; /* 2s delay to start fading out */}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff8c00; /* Dark Orange */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+

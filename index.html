@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Kitchen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loadingAlert" class="loading-alert">
+        <p>welcome to Elite Kitchen</p>
+    </div>
+    <header>
+        <div class="logo">
+            <h1>Elite Kitchen</h1>
+        </div>
+          <nav>
+            <ul id="nav-menu">
+                <li><a href="#foods">Foods</a></li>
+                <li><a href="#snacks">Snacks</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+                <li><a href="cart.html"><img src="kimages/download.jpeg" style="width: 30px;"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h2>Welcome to Elite Kitchen</h2>
+        <p>Discover our delicious foods, snacks, and drinks</p>
+        <a href="#foods" class="cta">Shop Now</a>
+    </section>
+    <main>
+        <section id="foods">
+            <h2>Foods</h2>
+            <div class="product">
+                <img src="kimages/pork load.jpeg" alt="Delicious Food 1">
+                <h3>Delicious Food 1</h3>
+                <p>$10.00</p>
+                <p>A classic favorite with a touch of elegance.</p>
+                <button onclick="addToCart('Delicious Food 1', 10)" class="button">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="kimages/ugali and samaki.jpeg" alt="Delicious Food 2">
+                <h3>Delicious Food 2</h3>
+                <p>$12.00</p>
+                <p>Succulent, flavorful, and made to perfection.</p>
+                <button onclick="addToCart('Delicious Food 2', 12)" class="button">Add to Cart</button>
+            </div>
+            <!-- Add more food products similarly -->
+        </section>
+        <section id="snacks">
+            <h2>Snacks</h2>
+            <div class="product">
+                <img src="kimages/ngumu.jpeg" alt="Tasty Snack 1">
+                <h3>Tasty Snack 1</h3>
+                <p>$5.00</p>
+                <p>Perfect for a quick, satisfying bite.</p>
+                <button onclick="addToCart('Tasty Snack 1', 5)" class="button">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="kimages/fried chick.jpeg" alt="Tasty Snack 2">
+                <h3>Tasty Snack 2</h3>
+                <p>$6.00</p>
+                <p>Crispy and delicious, a delightful treat.</p>
+                <button onclick="addToCart('Tasty Snack 2', 6)" class="button">Add to Cart</button>
+            </div>
+            <!-- Add more snack products similarly -->
+        </section>
+        <section id="drinks">
+            <h2>Drinks</h2>
+            <div class="product">
+                <img src="kimages/wine.jpeg" alt="Refreshing Drink 1">
+                <h3>Refreshing Drink 1</h3>
+                <p>$3.00</p>
+                <p>A cool, invigorating beverage.</p>
+                <button onclick="addToCart('Refreshing Drink 1', 3)" class="button">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="kimages/drinks.jpeg" alt="Refreshing Drink 2">
+                <h3>Refreshing Drink 2</h3>
+                <p>$4.00</p>
+                <p>Quench your thirst with a burst of flavor.</p>
+                <button onclick="addToCart('Refreshing Drink 2', 4)" class="button">Add to Cart</button>
+            </div>
+            <!-- Add more drink products similarly -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Elite Kitchen</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
