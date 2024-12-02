@@ -46,3 +46,16 @@ button {
 button:hover {
     background-color: #ffa500; /* Lighter Orange */
 }
+
+.button2 {
+    padding: 10px 20px;
+    background-color: #ddd;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: #ffa500; /* Lighter Orange */
+}
